@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --gradiente: linear-gradient(to right, #0f2965, #961556);
+}
 html {
   height: 100vh;
   font-family: "Sora", sans-serif;
+  font-size: 14px;
 }
 body {
   background: url(img/background.jpg);
@@ -23,7 +27,37 @@ body {
   padding: 20px;
   color: white;
 }
-img {
+.profile-picture {
+  width: 150px;
+  border-radius: 50%;
+  background: var(--gradiente);
+}
+.user-name {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 16px 0;
+}
+.description {
+  font-size: 1em;
+  color: darkgrey;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  gap: 1.2em;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+li {
+  background: var(--gradiente);
+  padding: 0 40px;
+  height: 4em;
+  border-radius: 1em;
+}
+.li-icon {
   width: 30px;
-  height: 30px;
 }
