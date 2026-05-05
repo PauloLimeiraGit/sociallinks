@@ -48,16 +48,26 @@ body {
   margin: 2em 0;
   gap: 1.2em;
 }
+.list-item {
+  font-size: 1.2em;
+  height: 3em;
+  border-radius: 1em;
+  background: var(--gradiente);
+  display: flex;
+}
 .link {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: white;
+  flex-grow: 1;
 }
-li {
-  background: var(--gradiente);
-  padding: 0 40px;
-  height: 4em;
-  border-radius: 1em;
+.link > img {
+  width: 1.5em;
 }
+
 .li-icon {
   width: 30px;
 }
