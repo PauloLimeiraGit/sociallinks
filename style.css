@@ -19,12 +19,20 @@ body {
   height: 100%;
 }
 .container {
-  max-width: 540px;
-  margin: auto;
+  background: rgba(255, 255, 255, 0.1); /* transparência */
+  backdrop-filter: blur(10px); /* desfoque do fundo */
+  -webkit-backdrop-filter: blur(10px); /* suporte Safari */
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+
   color: white;
 }
 .profile-picture {
@@ -64,10 +72,35 @@ body {
   color: white;
   flex-grow: 1;
 }
-.link > img {
-  width: 1.5em;
+.li-icon {
+  width: 1.6em;
+  filter: brightness(0) invert(1);
+}
+footer {
+  padding: 0 20px;
+  display: flex;
+  gap: 1em;
+}
+.contact {
+  width: 2.2em;
+  height: 2.2em;
+  background: var(--gradiente);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.li-icon {
-  width: 30px;
+.icon-contact {
+  filter: brightness(0) invert(1);
+  width: 1.4em;
+}
+
+@media screen and (max-width: 815px) {
+  html {
+    font-size: 10px;
+  }
+  .profile-picture {
+    width: 8em;
+  }
 }
